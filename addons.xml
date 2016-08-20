@@ -18,7 +18,9 @@
 		<website>http://www.youtube.com</website>
 		<email>ytplugin at datanet dot ws</email>
 		<source>https://github.com/Kolifanes/plugin.video.youtube</source>
-		<datadir zip="true">https://github.com/koying/plugin.video.youtube/archive/675.2.2.zip</datadir>
+	</extension>
+	<extension point="semperpax.addon.datasource">
+		<datadir>https://github.com/koying/plugin.video.youtube/archive/675.2.2.zip</datadir>
 	</extension>
 </addon>
 
