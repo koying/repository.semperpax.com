@@ -19,8 +19,8 @@
 		<email>ytplugin at datanet dot ws</email>
 		<source>https://github.com/Kolifanes/plugin.video.youtube</source>
 	</extension>
-	<extension point="semperpax.addon.datasource">
-		<datadir>https://github.com/koying/plugin.video.youtube/archive/675.2.2.zip</datadir>
+	<extension point="xbmc.addon.datasource">
+		<url>https://github.com/koying/plugin.video.youtube/archive/675.2.2.zip</url>
 	</extension>
 </addon>
 
