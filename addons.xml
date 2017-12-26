@@ -1,27 +1,31 @@
-<?xml version='1.0' encoding='utf-8'?>
-<addons>
-
-<addon id="plugin.video.youtubeMPD" name="YouTube-Dash" version="675.2.2" provider-name="h0d3nt3uf3l, jdf76, bromix, koying">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-        <summary lang="en">Plugin for YouTube (DASH enabled)</summary>
-        <description lang="en">YouTube is one of the biggest video-sharing websites of the world.</description>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=267160</forum>
-		<website>http://www.youtube.com</website>
-		<email>ytplugin at datanet dot ws</email>
-		<source>https://github.com/Kolifanes/plugin.video.youtube</source>
-	</extension>
-	<extension point="xbmc.addon.datasource">
-		<url>https://github.com/koying/plugin.video.youtube/archive/675.2.2.zip</url>
-	</extension>
-</addon>
-
-</addons>
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="webinterface.youtube-dl" name="Youtube-dl interface" provider-name="koying" version="2.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0" />
+    <import addon="xbmc.webinterface" version="1.0.0" />
+    <import addon="script.module.youtube.dl" version="17.709.0" />
+  </requires>
+  <extension entry="application" library="app.py" point="xbmc.webinterface" type="wsgi" />
+  <extension point="kodi.addon.metadata">
+    <summary lang="en" />
+    <description lang="en">Interface with the youtube-dl addon</description>
+    <platform>all</platform>
+  </extension>
+</addon><addon id="script.module.youtube.dl" name="youtube-dl Control" provider-name="Rick Phillips (ruuk)" version="17.709.1">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.addon.signals" version="0.0.1" />
+    </requires>
+    <extension library="control.py" point="xbmc.python.script">
+        <provides>executable</provides>
+    </extension>
+    <extension library="lib" point="xbmc.python.module" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Module providing access to youtube-dl video stream extraction</summary>
+        <description lang="en">Module providing access to youtube-dl video stream extraction for hundreds of sites. Version is based on youtube-dl date version: YY.MDD.V where V is the addon specific sub-version. Also provides downloading with the option for background downloading with a queue and queue manager.</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forum.xbmc.org/showthread.php?tid=200877</forum>
+        <source>http://github.com/ruuk/script.module.youtube.dl</source>
+    </extension>
+</addon></addons>
