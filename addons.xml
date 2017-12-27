@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="webinterface.youtube-dl" name="Youtube-dl interface" provider-name="koying" version="1.0.0">
+<addons><addon id="webinterface.youtube-dl" name="Youtube-dl interface" provider-name="koying" version="1.0.1">
   <requires>
     <import addon="xbmc.python" version="2.20.0" />
     <import addon="xbmc.webinterface" version="1.0.0" />
-    <import addon="script.module.youtube.dl" version="17.709.0" />
+    <import addon="script.module.youtube.dl" version="17.709.2" />
   </requires>
   <extension entry="application" library="app.py" point="xbmc.webinterface" type="wsgi" />
   <extension point="kodi.addon.metadata">
