@@ -11,7 +11,7 @@
     <description lang="en">Interface with the youtube-dl addon</description>
     <platform>all</platform>
   </extension>
-</addon><addon id="script.module.youtube.dl" name="youtube-dl Control" provider-name="Rick Phillips (ruuk)" version="17.709.1">
+</addon><addon id="script.module.youtube.dl" name="youtube-dl Control" provider-name="Rick Phillips (ruuk)" version="17.709.2">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.addon.signals" version="0.0.1" />
