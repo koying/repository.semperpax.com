@@ -67,4 +67,15 @@ https://github.com/known-as-bmf/plugin.video.arteplussept
         
         <website>http://www.arte.tv</website>
     </extension>
+</addon><addon id="script.kodi.hue.ambilight" name="Kodi Philips Hue" provider-name="Chris Browet" version="670.9.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension library="default.py" point="xbmc.service" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Kodi-controlled Philips Hue lights</summary>
+    <description>Let Kodi control your Philips Hue lights. Either turns the lights into a room-sized ambilight (with slow response time), or automatically dims and un-dims them when playback starts.</description>
+    <platform>all</platform>
+  </extension>
 </addon></addons>
