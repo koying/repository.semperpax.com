@@ -67,7 +67,7 @@ https://github.com/known-as-bmf/plugin.video.arteplussept
         
         <website>http://www.arte.tv</website>
     </extension>
-</addon><addon id="script.kodi.hue.ambilight" name="Kodi Philips Hue" provider-name="Chris Browet" version="670.9.0">
+</addon><addon id="script.kodi.hue.ambilight" name="Kodi Philips Hue" provider-name="Chris Browet" version="670.9.1">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.requests" />
